@@ -1,0 +1,16 @@
+def factorialNormal(x):
+	if x >= 0:
+		product = 1
+		for i in range(1, x+1):
+			product *= i
+		return product
+	else:
+		return "Cannot calculate negative values."
+
+def factorialRecursive(x):
+	if x >= 0:
+		if x == 0: return 1
+		if x == 1: return 1
+		return factorialRecursive(x-1) * x
+	else:
+		return "Cannot calculate negative values."
